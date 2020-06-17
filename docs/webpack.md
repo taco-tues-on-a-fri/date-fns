@@ -36,7 +36,7 @@ export default const config = {
   plugins: [
     new webpack.ContextReplacementPlugin(
       /date\-fns[\/\\]/,
-      new RegExp(`[/\\\\\](${supportedLocales.join('|')})[/\\\\\]`)
+      new RegExp(`[/\\\\\](${supportedLocales.join('|')})[/\\\\\]index\.js$`)
     )
   ]
 }
